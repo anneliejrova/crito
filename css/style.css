@@ -24,7 +24,7 @@ a {
   border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-weight: 600;
   border-radius: 25px;
   font-size: 0.9rem;
@@ -49,7 +49,7 @@ a {
   border: 1px solid #191919;
   color: #ffffff;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-weight: 600;
   border-radius: 25px;
   font-size: 0.9rem;
@@ -74,7 +74,7 @@ a {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-weight: 600;
   border-radius: 25px;
   font-size: 0.9rem;
@@ -1151,7 +1151,7 @@ header .container .menu .main-menu .btn-login {
 .newsletter .container form input {
   color: #191919;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-size: 1rem;
   border-radius: 25px;
   outline: none;
