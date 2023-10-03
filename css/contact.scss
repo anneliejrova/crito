@@ -31,7 +31,7 @@ html, body{
     padding: 15px 30px;
     font-weight: 600;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 1.2rem;
 
     i{
         margin-left: 8px;
@@ -81,7 +81,7 @@ header{
         }
 
         .menu-bars-btn{
-            font-size: 25px;
+            font-size: 2rem;
             border: none;
             background-color: transparent;
 
@@ -256,7 +256,7 @@ main{
                 color: $txt-color;
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 700;
-                font-size: 52px;
+                font-size: 2.5rem;
             }
         }
     }
@@ -396,11 +396,10 @@ main{
                     width: 100%;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
-                    font-size: 35px;
-                    padding-bottom: 20px;
+                    font-size: 2.5rem;
+                    padding-bottom: 75px;
 
                     @media (min-width: 768px) {
-                        font-size: 45px;
                         width: 80%;
                     }
 
@@ -426,6 +425,7 @@ main{
                 }
             
                 .form-input{
+                    font-size: 1rem;
                     display: block;
                     width: 100%;
                     padding: 5px 20px;
