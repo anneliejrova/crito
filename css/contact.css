@@ -219,27 +219,22 @@ main .contact-us .container {
     justify-content: space-between;
   }
 }
-main .contact-us .container .card-txt a {
-  display: block;
-  font-size: 0.9rem;
-}
-main .contact-us .container .card-txt h3 {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.3rem;
-}
 main .contact-us .container .card {
   border-radius: 0px;
   display: flex;
   flex-direction: row;
   padding: 5px 10px;
-  align-items: center;
   gap: 1rem;
   border: none;
 }
 @media (min-width: 576px) {
   main .contact-us .container .card {
     border: 1px solid #DAD9D3;
+  }
+}
+@media (min-width: 992px) {
+  main .contact-us .container .card {
+    align-items: flex-start;
   }
 }
 main .contact-us .container .card .span {
@@ -258,32 +253,28 @@ main .contact-us .container .card .span {
     padding: 3rem;
   }
 }
-main .contact-us .container .card .icon {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
 main .contact-us .container .card .icon .round-black {
-  align-self: center;
-  color: #ffffff;
-  background-color: #191919;
-  font-size: 1rem;
-  padding: 0.3rem 0.9rem;
-  border-radius: 50%;
-  height: auto;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.3rem;
 }
 @media (min-width: 576px) {
   main .contact-us .container .card .icon .round-black {
     font-size: 1.3rem;
     padding: 0.5rem 1.2rem;
+    color: #ffffff;
+    background-color: #191919;
+    border-radius: 50%;
+    height: auto;
   }
 }
-main .contact-us .container .card .card-txt {
-  padding-top: 20px;
+main .contact-us .container .card .card-txt a {
+  display: block;
+  font-size: 0.9rem;
 }
 main .contact-us .container .card .card-txt h3 {
   font-size: 1.2rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
 }
 @media (min-width: 576px) {
   main .contact-us .container .card .card-txt h3 {
@@ -295,7 +286,7 @@ main .contact-us .container .card .card-txt p a:hover {
 }
 @media (min-width: 576px) {
   main .contact-us .container .card .card-txt p a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 1200px) {
@@ -306,12 +297,12 @@ main .contact-us .container .card .card-txt p a:hover {
 main .message-form .container {
   margin-bottom: 100px;
   background-color: #F0EFE9;
-  padding: 30px 5px 3 0px 5px;
   width: 98%;
+  padding: 50px 5px 50px 5px;
 }
 @media (min-width: 576px) {
   main .message-form .container {
-    padding: 100px 100px 30px 100px;
+    padding: 110px 100px;
   }
 }
 @media (min-width: 992px) {
@@ -365,6 +356,12 @@ main .message-form .container #messageForm textarea {
 main .map {
   width: 100vw;
 }
+main .map img {
+  border: 1px solid #ffffff;
+}
+main .map img:hover {
+  border: 1px solid #191919;
+}
 main .map .zoom-in {
   display: block;
   width: 100%;
@@ -395,9 +392,14 @@ footer a {
   color: #ffffff;
 }
 footer .footer-menu {
-  padding: 100px 0 50px 0;
+  padding: 60px 0;
   position: relative;
   z-index: 0;
+}
+@media (min-width: 576px) {
+  footer .footer-menu {
+    padding: 100px 0 50px 0;
+  }
 }
 footer .footer-menu .lines {
   width: 100vw;

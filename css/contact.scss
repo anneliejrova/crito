@@ -271,32 +271,23 @@ main{
                 display: flex;
                 justify-content: space-between;
             }
-            
-
-            .card-txt{
-                a{
-                    display: block;
-                    font-size: 0.9rem;
-                }
-                
-                h3{
-                    font-family: 'DM Sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 1.3rem;
-                }   
-            }
 
             .card{
                 border-radius: 0px;
                 display: flex;
                 flex-direction: row;
                 padding: 5px 10px;
-                align-items: center;
                 gap: 1rem;
                 border: none;
+                
+                
 
                 @media (min-width: 576px) {
                     border: 1px solid #DAD9D3;
+                }
+
+                @media (min-width: 992px) {
+                align-items: flex-start;
                 }
 
             
@@ -316,36 +307,34 @@ main{
                 }
 
                 .icon{
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    flex-direction: column;
-
                     .round-black{
-                        align-self: center;
-                        color:#ffffff;
-                        background-color: #191919;
-                        font-size: 1rem;
-                        padding: 0.3rem 0.9rem;
-                        border-radius: 50%;
-                        height: auto;
+                        padding: 0.5rem 1.2rem;;
+                        font-size: 1.3rem;
 
                         @media (min-width: 576px) {
                         font-size: 1.3rem;
                         padding: 0.5rem 1.2rem;
+
+                        color:#ffffff;
+                        background-color: #191919;
+                        border-radius: 50%;
+                        height: auto;
                         }
                     }
                 }
 
                 .card-txt{
-                    
-                    padding-top: 20px;
 
+                    a{
+                        display: block;
+                        font-size: 0.9rem;
+                    }
 
-                    
 
                     h3{
                         font-size: 1.2rem;
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
                         
                         @media (min-width: 576px) {
                             font-size: 1.6rem;
@@ -360,7 +349,7 @@ main{
                             }
                             
                             @media (min-width: 576px){
-                                font-size: 0.9rem;
+                                font-size: 0.8rem;
                             }
                         }
                     }
@@ -383,11 +372,11 @@ main{
         .container{
             margin-bottom: 100px;
             background-color: #F0EFE9;
-            padding: 30px 5px 3 0px 5px;
             width: 98%;
+            padding: 50px 5px 50px 5px;
 
             @media (min-width: 576px) {
-            padding: 100px 100px 30px 100px;
+            padding: 110px 100px;
             }
 
             @media (min-width: 992px) {
@@ -455,6 +444,14 @@ main{
     .map{
         width: 100vw;
 
+        img{
+        border: 1px solid #ffffff;
+        &:hover{
+            border: 1px solid #191919;
+        }
+       
+        }   
+
         .zoom-in{
             display: block;
             width: 100%;
@@ -492,9 +489,13 @@ footer{
 
 
     .footer-menu{
-        padding: 100px 0 50px 0;
+        padding: 60px 0;
         position: relative;
         z-index: 0;
+
+        @media (min-width: 576px) {
+            padding: 100px 0 50px 0;
+        }
 
     
         .lines{
