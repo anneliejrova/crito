@@ -5,6 +5,7 @@ $bg-color: #F0EFE9; //grey
 $accent-color:#F9D783; //yellow
 $txt-color: #191919; //dark grey
 $txt-accent: #F94D1C; //red
+$hover-border: #7c7c7c; //light grey
 
 html, body{
 
@@ -154,7 +155,7 @@ header{
 
                     
                         &:hover{
-                            color: #7c7c7c;
+                            color: $hover-border;
                         }
                     }
                     
@@ -350,7 +351,7 @@ main{
                         a{  
                         
                             &:hover{
-                                color: #7c7c7c;
+                                color: $hover-border;
                             }
                             
                             @media (min-width: 576px){
@@ -610,7 +611,7 @@ footer{
                     display: block;
                     color: #ffffff;
                     &:hover{
-                        color: #7c7c7c;
+                        color: $hover-border;
                     }
 
                 }
@@ -648,7 +649,7 @@ footer{
     
     .footer-bottom{
         grid-area: bottom;
-        border-top: 1px solid #7c7c7c;
+        border-top: 1px solid $hover-border;
 
         .container{
             font-size: 0.6rem;
@@ -678,7 +679,7 @@ footer{
             color:#ffffff;
 
                 &:hover{
-                color: #7c7c7c;
+                color: $hover-border;
                  }
 
                  @media (min-width:768px) {
