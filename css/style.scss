@@ -35,7 +35,11 @@ a{
     padding: 15px 30px;
     font-weight: 600;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 0.9rem;
+
+    @media (min-width:576px) {
+        font-size: 1rem;
+    }
 
     i{
         margin-left: 8px;
@@ -58,7 +62,11 @@ a{
     padding: 15px 30px;
     font-weight: 600;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 0.9rem;
+
+    @media (min-width:576px) {
+        font-size: 1rem;
+    }
 
     i{
         margin-left: 8px;
@@ -81,7 +89,11 @@ a{
     padding: 15px 30px;
     font-weight: 600;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 0.9rem;
+
+    @media (min-width:576px) {
+        font-size: 1rem;
+    }
 
     i{
         margin-left: 8px;
@@ -123,7 +135,7 @@ a{
         font-size: 38px;
 
         @media (min-width: 1200px){
-            font-size: 45px;
+            font-size: 2.5rem;
         }
     }
 }
@@ -219,7 +231,7 @@ header{
 
                         i{
                             margin-right: 5px;
-                            font-size: 1.2em;
+                            font-size: 1.2rem;
                         }
                     }
                 }
@@ -424,7 +436,18 @@ header{
 }
 
 .features{
-    padding: 0px 0 150px 0;
+    padding-bottom: 20px;
+
+    @media (min-width:576px) {
+        padding-bottom: 20px}
+
+        @media (min-width:992px) {
+            padding-bottom: 25px}
+    
+
+    @media (min-width:1200px) {
+        padding-bottom: 150px;
+    }
     
     .container{
         border: 1px solid #DAD9D3;
@@ -568,7 +591,8 @@ header{
             "about-txt"
             "about-img"; 
 
-        @media (min-width: 1200px) {
+
+            @media (min-width: 1200px) {
             grid-template-areas:
                 "about-img about-txt";
             }
@@ -592,33 +616,61 @@ header{
             .sam-photo{
                 z-index: 1;
                 right: -0px;
-                width: 100%;
+                width: 90%;
             }
 
             .founder-txt{
-                padding: 10px;
+                padding: 5px;
                 width: 50%;
                 height: auto;
                 background-color: #BEEBFF;
                 position: absolute;
                 z-index: 2;
                 left: 0px;
-                bottom: 50px;
+                bottom: 40px;
                 font-size: 0.6rem;
 
                 h3{
                     font-size: 1rem;
                 }
 
-
                 @media (min-width: 576px) {
-                    padding: 25px;
-                font-size: 1rem;
-
-                h3{
-                    font-size: 1.4rem;
+                    padding: 5px;
+                    width: 50%;
+                    left: -40px;
+                    bottom: 40px;
+                    font-size: 1rem;
                 }
-            
+
+                @media (min-width: 768px) {
+                    padding: 10px;
+                    width: 45%;
+                    left: -40px;
+                    bottom: 40px;
+                }
+
+                
+
+                @media (min-width: 992px) { 
+                    padding:15px;
+                    font-size: 1rem;   
+                    h3{
+                        font-size: 1.2rem;
+                    }
+                }            
+
+
+
+                @media (min-width: 1200px) {
+                    padding: 2px;
+                    width: 70%;
+                }
+
+                @media (min-width: 1400px) {
+                    padding: 10px;
+                    width: 50%;
+                    left: 0px;
+                    bottom: 50px;
                 }
 
                 span{
@@ -794,7 +846,7 @@ header{
 
 
                 i{
-                    font-size: 35px;
+                    font-size: 2.5rem;
                     padding: 10px 0;
                 }
 
@@ -913,7 +965,10 @@ header{
 
 
             .section-title{
-                padding: 0;
+                padding-top: 20px;
+                @media (min-width:576px) {
+                    padding-top: 0px;
+                }
             }
 
             .reasons{
@@ -985,7 +1040,7 @@ header{
                 h3 {
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
-                    font-size: 22px;
+                    font-size: 1.3rem;
                     padding-top: 35px;
                     padding-bottom: 16px;
                     border-bottom: 1px solid #DAD9D3;
@@ -997,7 +1052,7 @@ header{
                     text-align: right;
                     color: #313131;
                     font-family: Inter, sans-serif;
-                    font-size: 14px;
+                    font-size: 0.9rem;
                     font-weight: 500;
                     text-decoration: none;
 
@@ -1147,6 +1202,7 @@ header{
                         padding-bottom: 100px;
 
                         .client-img{
+                            padding-right: 9px;
 
                             @media (min-width: 992px) {
                             padding-right: 15px;
@@ -1159,12 +1215,13 @@ header{
                             h4{
                                 font-family: 'DM Sans', sans-serif;
                                 font-weight: 700;   
-                                font-size: 22px;
+                                font-size: 1.2rem;
                             }
 
                             p{
                                 color: $txt-accent;
-                                font-size: 14px;
+                                font-size: 0.9rem;
+                                line-height: 1rem;
                             }
                         }
                     }
@@ -1181,16 +1238,30 @@ header{
 .news{
     .container{
         display: grid;
-        grid-template-areas:    "headline button"
+        grid-template-areas:    "headline" 
+                                "articles"
+                                "button";
+
+
+        @media (min-width:992px) {
+            grid-template-areas: "headline button"
                                 "articles articles";
+        }
+        
 
         .section-title{
             grid-area: headline;
-        }
+
+            }
 
         .news-btn{
             grid-area: button;
+            padding-bottom: 100px;
+
+            @media (min-width:992px) {
             margin-top: 50px;
+            padding-bottom: 0;
+            }
         }
 
 
@@ -1285,7 +1356,7 @@ header{
 
        h2{
         font-family: 'DM Sans', sans-serif;
-        font-size: 45px;
+        font-size: 2.5rem;
         font-weight: 700;
         }
 
@@ -1294,7 +1365,7 @@ header{
                 color: $txt-color;
                 text-decoration: none;
                 padding: 15px 30px;
-                font-size: 16px;
+                font-size: 1rem;
                 border-radius: 25px;
                 outline: none;
                 border: 1px solid #DAD9D3;

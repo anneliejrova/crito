@@ -27,7 +27,12 @@ a {
   padding: 15px 30px;
   font-weight: 600;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 0.9rem;
+}
+@media (min-width: 576px) {
+  .btn-yellow {
+    font-size: 1rem;
+  }
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -47,7 +52,12 @@ a {
   padding: 15px 30px;
   font-weight: 600;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 0.9rem;
+}
+@media (min-width: 576px) {
+  .btn-black {
+    font-size: 1rem;
+  }
 }
 .btn-black i {
   margin-left: 8px;
@@ -67,7 +77,12 @@ a {
   padding: 15px 30px;
   font-weight: 600;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 0.9rem;
+}
+@media (min-width: 576px) {
+  .btn-transparent {
+    font-size: 1rem;
+  }
 }
 .btn-transparent i {
   margin-left: 8px;
@@ -107,7 +122,7 @@ a {
 }
 @media (min-width: 1200px) {
   .section-title h2 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
 }
 
@@ -197,7 +212,7 @@ header .container .menu .top-menu .contact-info .content-box.last {
 }
 header .container .menu .top-menu .contact-info .content-box i {
   margin-right: 5px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 header .container .menu .top-menu .so-media a {
   font-size: 1.2rem;
@@ -363,7 +378,22 @@ header .container .menu .main-menu .btn-login {
 }
 
 .features {
-  padding: 0px 0 150px 0;
+  padding-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .features {
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .features {
+    padding-bottom: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .features {
+    padding-bottom: 150px;
+  }
 }
 .features .container {
   border: 1px solid #DAD9D3;
@@ -507,17 +537,17 @@ header .container .menu .main-menu .btn-login {
 .about .container .about-img .sam-photo {
   z-index: 1;
   right: 0px;
-  width: 100%;
+  width: 90%;
 }
 .about .container .about-img .founder-txt {
-  padding: 10px;
+  padding: 5px;
   width: 50%;
   height: auto;
   background-color: #BEEBFF;
   position: absolute;
   z-index: 2;
   left: 0px;
-  bottom: 50px;
+  bottom: 40px;
   font-size: 0.6rem;
 }
 .about .container .about-img .founder-txt h3 {
@@ -525,11 +555,42 @@ header .container .menu .main-menu .btn-login {
 }
 @media (min-width: 576px) {
   .about .container .about-img .founder-txt {
-    padding: 25px;
+    padding: 5px;
+    width: 50%;
+    left: -40px;
+    bottom: 40px;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .about .container .about-img .founder-txt {
+    padding: 10px;
+    width: 45%;
+    left: -40px;
+    bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .about .container .about-img .founder-txt {
+    padding: 15px;
     font-size: 1rem;
   }
   .about .container .about-img .founder-txt h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .about .container .about-img .founder-txt {
+    padding: 2px;
+    width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  .about .container .about-img .founder-txt {
+    padding: 10px;
+    width: 50%;
+    left: 0px;
+    bottom: 50px;
   }
 }
 .about .container .about-img .founder-txt span {
@@ -672,7 +733,7 @@ header .container .menu .main-menu .btn-login {
   background-color: #F9D783;
 }
 .services .container .cards .service-card i {
-  font-size: 35px;
+  font-size: 2.5rem;
   padding: 10px 0;
 }
 .services .container .cards .service-card .service-txt {
@@ -785,7 +846,12 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .why-us .container .why-txt .section-title {
-  padding: 0;
+  padding-top: 20px;
+}
+@media (min-width: 576px) {
+  .why-us .container .why-txt .section-title {
+    padding-top: 0px;
+  }
 }
 @media (min-width: 1200px) {
   .why-us .container .why-img {
@@ -835,7 +901,7 @@ header .container .menu .main-menu .btn-login {
 .project-case .container .project-cases .project h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.3rem;
   padding-top: 35px;
   padding-bottom: 16px;
   border-bottom: 1px solid #DAD9D3;
@@ -846,7 +912,7 @@ header .container .menu .main-menu .btn-login {
   text-align: right;
   color: #313131;
   font-family: Inter, sans-serif;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
 }
@@ -964,6 +1030,9 @@ header .container .menu .main-menu .btn-login {
   display: flex;
   padding-bottom: 100px;
 }
+.team-and-testimonial .container .testimonial .reviews .review .client .client-img {
+  padding-right: 9px;
+}
 @media (min-width: 992px) {
   .team-and-testimonial .container .testimonial .reviews .review .client .client-img {
     padding-right: 15px;
@@ -972,11 +1041,12 @@ header .container .menu .main-menu .btn-login {
 .team-and-testimonial .container .testimonial .reviews .review .client .client-txt h4 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 .team-and-testimonial .container .testimonial .reviews .review .client .client-txt p {
   color: #F94D1C;
-  font-size: 14px;
+  font-size: 0.9rem;
+  line-height: 1rem;
 }
 .team-and-testimonial .container .testimonial .testimonial-btn {
   margin-bottom: 50px;
@@ -984,14 +1054,25 @@ header .container .menu .main-menu .btn-login {
 
 .news .container {
   display: grid;
-  grid-template-areas: "headline button" "articles articles";
+  grid-template-areas: "headline" "articles" "button";
+}
+@media (min-width: 992px) {
+  .news .container {
+    grid-template-areas: "headline button" "articles articles";
+  }
 }
 .news .container .section-title {
   grid-area: headline;
 }
 .news .container .news-btn {
   grid-area: button;
-  margin-top: 50px;
+  padding-bottom: 100px;
+}
+@media (min-width: 992px) {
+  .news .container .news-btn {
+    margin-top: 50px;
+    padding-bottom: 0;
+  }
 }
 .news .container .articles {
   grid-area: articles;
@@ -1064,14 +1145,14 @@ header .container .menu .main-menu .btn-login {
 }
 .newsletter .container h2 {
   font-family: "DM Sans", sans-serif;
-  font-size: 45px;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .newsletter .container form input {
   color: #191919;
   text-decoration: none;
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 25px;
   outline: none;
   border: 1px solid #DAD9D3;
