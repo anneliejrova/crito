@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,900&display=swap');
 
 $bg-color: #F0EFE9; //grey
+$light-color:  #eeeeee; //white
 $accent-color:#F9D783; //yellow
 $txt-color: #191919; //dark grey
 $txt-accent: #F94D1C; //red
 $hover-border: #7c7c7c; //light grey
+$footer-bg: #0E1021; //darkblue
 
 html, body{
 
@@ -325,7 +327,7 @@ main{
                         font-size: 1.3rem;
                         padding: 0.5rem 1.2rem;
 
-                        color:#ffffff;
+                        color:$light-color;
                         background-color: $txt-color;
                         border-radius: 50%;
                         height: auto;
@@ -476,12 +478,12 @@ main{
 
 
 footer{
-    background-color: #0E1021;
-    color: #ffffff;
+    background-color: $footer-bg;
+    color: $light-color;
 
     a{
         text-decoration: none;
-        color: #ffffff;
+        color: $light-color;
     }
 
 
@@ -600,7 +602,7 @@ footer{
 
                 a{
                     display: block;
-                    color: #ffffff;
+                    color: $light-color;
                     &:hover{
                         color: $hover-border;
                     }
@@ -625,6 +627,11 @@ footer{
                         @media (min-width:768px) {
                             display: block;
                         }
+                    }
+
+                    .link-menu{
+                        background-color: #0e1021ad;
+                        border-radius: 50%;
                     }
             }
             }
@@ -661,7 +668,7 @@ footer{
             i{
             padding: 0.6rem;
             font-size: 1rem;
-            color:#ffffff;
+            color:$light-color;
 
                 &:hover{
                 color: $hover-border;

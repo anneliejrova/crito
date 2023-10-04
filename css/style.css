@@ -47,7 +47,7 @@ a {
 .btn-black {
   background-color: #191919;
   border: 1px solid #191919;
-  color: #ffffff;
+  color: #eeeeee;
   text-decoration: none;
   padding: 10px 30px;
   font-weight: 600;
@@ -64,7 +64,7 @@ a {
   font-size: 0.9em;
 }
 .btn-black:hover {
-  background-color: #ffffff;
+  background-color: #eeeeee;
   color: #191919;
   border-color: #191919;
 }
@@ -736,7 +736,7 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .services .container .cards .service-card {
-  background-color: #ffffff;
+  background-color: #eeeeee;
   padding: 30px 30px 0px 30px;
   width: 300px;
   height: auto;
@@ -851,7 +851,7 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .why-us .container .why-txt {
-  background-color: #fff;
+  background-color: #eeeeee;
   padding-bottom: 50px;
 }
 @media (min-width: 992px) {
@@ -924,7 +924,7 @@ header .container .menu .main-menu .btn-login {
   padding: 15px;
   display: block;
   text-align: right;
-  color: #313131;
+  color: #191919;
   font-family: Inter, sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
@@ -935,7 +935,7 @@ header .container .menu .main-menu .btn-login {
 }
 .project-case .container .project-cases .project:hover .read {
   text-decoration: underline;
-  color: #000000;
+  font-weight: 700;
 }
 .project-case .container .center-content {
   margin-top: 50px;
@@ -1003,7 +1003,7 @@ header .container .menu .main-menu .btn-login {
 .team-and-testimonial .container .testimonial {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #eeeeee;
   margin: 50px 10px;
   padding: 10px;
 }
@@ -1178,7 +1178,7 @@ header .container .menu .main-menu .btn-login {
 
 footer {
   background-color: #0E1021;
-  color: #ffffff;
+  color: #eeeeee;
 }
 footer .footer-menu {
   padding: 100px 0 50px 0;
@@ -1267,7 +1267,7 @@ footer .footer-menu .container .menu {
 }
 footer .footer-menu .container .menu a {
   display: block;
-  color: #fff;
+  color: #eeeeee;
 }
 footer .footer-menu .container .menu a:hover {
   color: #7c7c7c;
@@ -1287,6 +1287,10 @@ footer .footer-menu .container .menu .menu-item .specified-menu {
   footer .footer-menu .container .menu .menu-item .specified-menu {
     display: block;
   }
+}
+footer .footer-menu .container .menu .menu-item .link-menu {
+  background-color: rgba(14, 16, 33, 0.6784313725);
+  border-radius: 50%;
 }
 footer .footer-bottom {
   grid-area: bottom;
@@ -1316,7 +1320,7 @@ footer .footer-bottom .container .copy span {
 footer .footer-bottom .container i {
   padding: 0.6rem;
   font-size: 1rem;
-  color: #ffffff;
+  color: #eeeeee;
 }
 footer .footer-bottom .container i:hover {
   color: #7c7c7c;

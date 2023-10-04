@@ -266,7 +266,7 @@ main .contact-us .container .card .icon .round-black {
   main .contact-us .container .card .icon .round-black {
     font-size: 1.3rem;
     padding: 0.5rem 1.2rem;
-    color: #ffffff;
+    color: #eeeeee;
     background-color: #191919;
     border-radius: 50%;
     height: auto;
@@ -378,11 +378,11 @@ main .map img {
 
 footer {
   background-color: #0E1021;
-  color: #ffffff;
+  color: #eeeeee;
 }
 footer a {
   text-decoration: none;
-  color: #ffffff;
+  color: #eeeeee;
 }
 footer .footer-menu {
   padding: 60px 0;
@@ -488,7 +488,7 @@ footer .footer-menu .container .menu {
 }
 footer .footer-menu .container .menu a {
   display: block;
-  color: #ffffff;
+  color: #eeeeee;
 }
 footer .footer-menu .container .menu a:hover {
   color: #7c7c7c;
@@ -508,6 +508,10 @@ footer .footer-menu .container .menu .menu-item .specified-menu {
   footer .footer-menu .container .menu .menu-item .specified-menu {
     display: block;
   }
+}
+footer .footer-menu .container .menu .menu-item .link-menu {
+  background-color: rgba(14, 16, 33, 0.6784313725);
+  border-radius: 50%;
 }
 footer .footer-bottom {
   grid-area: bottom;
@@ -537,7 +541,7 @@ footer .footer-bottom .container .copy span {
 footer .footer-bottom .container i {
   padding: 0.6rem;
   font-size: 1rem;
-  color: #ffffff;
+  color: #eeeeee;
 }
 footer .footer-bottom .container i:hover {
   color: #7c7c7c;

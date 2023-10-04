@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,900&display=swap');
 
 $bg-color: #F0EFE9; //grey
+$light-color: #eeeeee;//white
 $accent-color:#F9D783; //yellow
 $txt-color: #191919; //dark grey
 $txt-accent: #F94D1C; //red
 $hover-border: #7c7c7c; //light grey
+$footer-bg: #0E1021; //dark blue
 
 html, body{
 
@@ -57,7 +59,7 @@ a{
 .btn-black{
     background-color: $txt-color;
     border: 1px solid $txt-color;
-    color: #ffffff;
+    color: $light-color;
     text-decoration: none;
     padding: 10px 30px;
     font-weight: 600;
@@ -74,7 +76,7 @@ a{
     }
 
     &:hover{
-        background-color: #ffffff;
+        background-color: $light-color;
         color: $txt-color;
         border-color: $txt-color;
     }
@@ -801,6 +803,7 @@ header{
 
 }
 
+
 .services{
     margin: 50px 0 150px 0;
     padding-bottom: 50px;
@@ -844,7 +847,7 @@ header{
 
 
             .service-card{
-                background-color: #ffffff;
+                background-color: $light-color;
                 padding: 30px 30px 0px 30px;
                 width: 300px;
                 height: auto;
@@ -969,7 +972,7 @@ header{
         
 
         .why-txt{
-            background-color: #fff;
+            background-color: $light-color;
             padding-bottom: 50px;
 
         @media (min-width: 992px){
@@ -1063,7 +1066,7 @@ header{
                     padding: 15px;
                     display: block;
                     text-align: right;
-                    color: #313131;
+                    color: $txt-color;
                     font-family: Inter, sans-serif;
                     font-size: 0.9rem;
                     font-weight: 500;
@@ -1076,7 +1079,7 @@ header{
                 
                 &:hover .read{
                     text-decoration: underline;
-                    color: #000000;
+                    font-weight: 700;
                 }
 
             }
@@ -1173,7 +1176,7 @@ header{
        .testimonial{
             display: flex;
             flex-direction: column;
-            background-color: #fff;
+            background-color: $light-color;
             margin: 50px 10px;
             padding: 10px;
 
@@ -1394,8 +1397,8 @@ header{
 }
 
 footer{
-    background-color: #0E1021;
-    color: #ffffff;
+    background-color: $footer-bg;
+    color: $light-color;
     
 
     .footer-menu{
@@ -1503,7 +1506,7 @@ footer{
 
                 a{
                     display: block;
-                    color: #fff;
+                    color: $light-color;
 
                     &:hover{
                         color: $hover-border;
@@ -1519,8 +1522,8 @@ footer{
                            font-size: 1rem; 
 
                            @media (min-width:768px) {
-                            font-size: 1.6rem;
-                        }
+                                font-size: 1.6rem;
+                            }
                         }
                         
                     }
@@ -1531,6 +1534,11 @@ footer{
                         @media (min-width:768px) {
                             display: block;
                         }
+
+                    }
+                    .link-menu{
+                        background-color: #0e1021ad;
+                        border-radius: 50%;
                     }
             }
             }
@@ -1570,7 +1578,7 @@ footer{
             i{
             padding: 0.6rem;
             font-size: 1rem;
-            color:#ffffff;
+            color:$light-color;
 
                 &:hover{
                 color: $hover-border;
