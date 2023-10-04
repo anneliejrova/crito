@@ -153,15 +153,17 @@ h3{
 header{
     background-color: $bg-color;
     padding: 14px;
+    
 
     .container{
         display:flex;
         gap: 20px;
         align-items: center;
         justify-content: space-between;
+        
 
         @media (min-width:2500px){
-            max-width: 2045px;
+            max-width: 2048px;
         }
 
         .menu-bars-btn{
@@ -252,7 +254,7 @@ header{
                         &:hover{
                             color: $hover-border;
                         }
-                    } 
+                    }  
                 }
             }
 
@@ -285,16 +287,12 @@ header{
                             left: 50%;
                             bottom: -3px;
                             transform: translate((calc(50% - 15px)));
-                        
-                    
-
                         }
                     }
                 }
 
                 .btn-login{
-                    padding-top: 12px;
-                    padding-bottom: 12px;
+                    padding: 8px 25px;
                 }
             }
         }

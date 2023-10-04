@@ -180,8 +180,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   transform: translate(calc(50% - 15px));
 }
 header .container .menu .main-menu .btn-login {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 8px 25px;
 }
 
 .news-title {
