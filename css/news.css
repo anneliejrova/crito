@@ -286,9 +286,6 @@ header .container .menu .main-menu .btn-login {
 .news .container .articles .article .article-txt {
   width: 420px;
 }
-.news .pagenr {
-  padding-bottom: 50px;
-}
 
 .pagenr {
   grid-area: pagenr;

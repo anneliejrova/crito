@@ -10,7 +10,6 @@ $hover-border: #7c7c7c; //light grey
 $footer-bg: #0E1021; //darkblue
 
 html, body{
-
     color: $txt-color;
     font-family: Inter, sans-serif;
     font-size: 20px;
@@ -18,12 +17,10 @@ html, body{
     line-height: 2.0;
 
     @media (min-width: 576px) {
-    font-size: 16px;
-    font-weight: 400;
-        
+        font-size: 16px;
+        font-weight: 400;
     }
 }
-
 
 .btn-yellow{
     background-color: $accent-color;
@@ -181,10 +178,8 @@ header{
                         &:hover{
                             color: $hover-border;
                         }
-                    }
-                    
-                }
-            
+                    }                    
+                }           
             }
 
             .main-menu{
@@ -229,7 +224,6 @@ header{
                 }
             }
         }
-
     }
 }
 
@@ -271,11 +265,7 @@ main{
                         font-weight: 700;
                     }
                 }
-                
-    
-    
             }
-    
         }
     }
 
@@ -385,10 +375,8 @@ main{
                         padding-top: 0px;
                     }
                 }
-                
             }
         }
-
     }
 
     .message-form{
@@ -404,8 +392,7 @@ main{
             }
 
             @media (min-width: 992px) {
-                padding: 150px 150px 75px 150px;
-                
+                padding: 150px 150px 75px 150px;   
             }
 
             .center-content{
@@ -465,7 +452,6 @@ main{
                 button{
                     width: 100%;
                 }
-
             }
         }
     }
@@ -476,15 +462,13 @@ main{
         align-items: center;
         margin-top: 60px;
         img{
-        width: 100vw;
+            width: 100vw;
     
-        @media (min-width: 992px){
-            margin-top: 120px;
+            @media (min-width: 992px){
+                margin-top: 120px;
+            }
         }
-        }
-    }
-
-        
+    }     
 }
 
 
@@ -497,7 +481,6 @@ footer{
         text-decoration: none;
         color: $light-color;
     }
-
 
     .footer-menu{
         padding: 60px 0;
@@ -534,7 +517,7 @@ footer{
 
             @media (min-width: 576px){
                 flex-direction: row;
-                }
+            }
 
 
             @media (min-width: 768px){
@@ -554,12 +537,12 @@ footer{
                 
 
                 @media (min-width: 768px){
-                display:flex;
-                flex-direction: row;
+                    display:flex;
+                    flex-direction: row;
                 }
 
                 @media (min-width: 992px){
-                align-items: center;
+                    align-items: center;
                 }
  
 
@@ -582,13 +565,8 @@ footer{
                     @media (min-width: 576px){
                     display: block;
                     }
-  
                 }
-
             }
-
-            
-        
 
             .menu{
                 padding-top: 30px;
@@ -599,22 +577,19 @@ footer{
                 flex-wrap: wrap;
                 gap: 20px;
 
-
                 @media (min-width: 576px){
                 flex-direction: column;
                 flex-wrap: nowrap;
                 }
 
-
                 @media (min-width:768px) {
                   flex-direction: row;
                 }
 
-
-
                 a{
                     display: block;
                     color: $light-color;
+
                     &:hover{
                         color: $hover-border;
                     }
@@ -624,12 +599,12 @@ footer{
                 .menu-item{
 
                     .title{
+
                         h3{
                             font-size: 0.9rem;
                             @media (min-width: 576px) {
                                 font-size: 1.3rem;
                             }
-
                         }
                     }
 
@@ -645,10 +620,9 @@ footer{
                         background-color: #0e1021ad;
                         border-radius: 50%;
                     }
-            }
+                }
             }
         }
-    
     } 
     
     .footer-bottom{

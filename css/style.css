@@ -151,7 +151,7 @@ header .container {
 }
 @media (min-width: 2500px) {
   header .container {
-    max-width: 2048px;
+    max-width: 2045px;
   }
 }
 header .container .menu-bars-btn {
