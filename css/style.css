@@ -828,7 +828,8 @@ header .container .menu .main-menu .btn-login {
 }
 @media (min-width: 1400px) {
   .why-us .grey {
-    height: 60%;
+    height: 50%;
+    bottom: 100px;
   }
 }
 .why-us .container {
@@ -859,7 +860,6 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .why-us .container .why-txt {
-  background-color: #eeeeee;
   padding-bottom: 50px;
 }
 @media (min-width: 992px) {
@@ -952,7 +952,24 @@ header .container .menu .main-menu .btn-login {
 
 .team-and-testimonial {
   background-color: #F9D783;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .team-and-testimonial {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .team-and-testimonial {
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .team-and-testimonial {
+    margin-bottom: 50px;
+  }
 }
 .team-and-testimonial .container .team {
   display: grid;
@@ -1012,7 +1029,7 @@ header .container .menu .main-menu .btn-login {
   display: flex;
   flex-direction: column;
   background-color: #eeeeee;
-  margin: 50px 10px;
+  margin: 60px 10px;
   padding: 10px;
 }
 @media (min-width: 992px) {
@@ -1074,6 +1091,16 @@ header .container .menu .main-menu .btn-login {
   margin-bottom: 50px;
 }
 
+@media (min-width: 1200px) {
+  .news {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  .news {
+    padding-bottom: 60px;
+  }
+}
 .news .container {
   display: grid;
   grid-template-areas: "headline" "articles" "button";
@@ -1087,12 +1114,13 @@ header .container .menu .main-menu .btn-login {
   grid-area: headline;
 }
 .news .container .news-btn {
+  margin-top: 10px;
   grid-area: button;
   padding-bottom: 100px;
 }
 @media (min-width: 992px) {
   .news .container .news-btn {
-    margin-top: 50px;
+    margin-top: 100px;
     padding-bottom: 0;
   }
 }
