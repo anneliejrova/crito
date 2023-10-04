@@ -70,6 +70,7 @@ h1{
     font-size: 2.5rem;
 }
 
+
 .wrapper-grid{
     height: 100vh;
     display: grid;
@@ -233,9 +234,8 @@ header{
     }
 }
 
-main{
 
-    .contact-title{
+    .news-title{
         background-color: $bg-color;
         position: relative;
         z-index: 0;
@@ -251,7 +251,7 @@ main{
                 left: 0;
                 z-index: -1;
             
-    
+                
                 @media (min-width: 1200px){
                     width: 30%;
                 }
@@ -276,216 +276,169 @@ main{
     
             }
     
+            
         }
     }
-
-   
-
-    .contact-us{
-        
-
-        .container{
-            padding: 0px;
-            
-            @media (min-width: 576px) {
-            padding: 100px 50px;
-            }
-
-            @media (min-width: 992px) {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .card{
-                border-radius: 0px;
-                display: flex;
-                flex-direction: row;
-                padding: 5px 10px;
-                gap: 1rem;
-                border: none;
-                
-                
-
-                @media (min-width: 576px) {
-                    border: 1px solid #DAD9D3;
-                }
-
-                @media (min-width: 992px) {
-                align-items: flex-start;
-                }
-
-            
-                .span{
-                    display: block;
-                }
-
-                @media (min-width: 992px) {
-                    flex-direction: column;
-                    padding: 25px 50px;
-                    width: 28%;
-                }
-
-                @media (min-width:1200px) {
-                    flex-direction: row;
-                    padding: 3rem;
-                }
-
-                .icon{
-                    .round-black{
-                        padding: 0.5rem 1.2rem;;
-                        font-size: 1.3rem;
-
-                        @media (min-width: 576px) {
-                        font-size: 1.3rem;
-                        padding: 0.5rem 1.2rem;
-
-                        color:$light-color;
-                        background-color: $txt-color;
-                        border-radius: 50%;
-                        height: auto;
-                        }
-                    }
-                }
-
-                .card-txt{
-
-                    a{
-                        display: block;
-                        font-size: 0.9rem;
-                    }
-
-
-                    h3{
-                        font-size: 1.2rem;
-                        font-family: 'DM Sans', sans-serif;
-                        font-weight: 700;
-                        
-                        @media (min-width: 576px) {
-                            font-size: 1.6rem;
-                        }
-                    }
-
-                    p{
-                        a{  
-                        
-                            &:hover{
-                                color: $hover-border;
-                            }
-                            
-                            @media (min-width: 576px){
-                                font-size: 0.8rem;
-                            }
-                        }
-                    }
-                    
-
-                    
-
-                    @media (min-width:1200px) {
-                        padding-top: 0px;
-                    }
-                }
-                
-            }
+    
+    .news{
+    
+        @media (min-width:1200px) {
+            padding-bottom: 30px;
         }
-
-    }
-
-    .message-form{
-
+    
+        @media (min-width:1400px) {
+            padding-bottom: 60px;
+        }
         .container{
-            margin-bottom: 100px;
-            background-color: $bg-color;
-            width: 98%;
-            padding: 50px 5px 50px 5px;
+            
+            display: grid;
+            grid-template-areas:    "headline" 
+                                    "articles";
+                                    
+            
+            
+    
+            .title{
+                grid-area: headline;
 
-            @media (min-width: 576px) {
-            padding: 110px 100px;
-            }
-
-            @media (min-width: 992px) {
-                padding: 150px 150px 75px 150px;
-                
-            }
-
-            .center-content{
-                
-               h3{
-                    width: 100%;
+                h2{
+                    color: $txt-color;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
-                    font-size: 2.5rem;
-                    padding-bottom: 75px;
-
-                    @media (min-width: 768px) {
-                        width: 80%;
-                    }
-
-
-
-                    @media (min-width: 992px) {
-                        width: 50%;
-                    
-                    }
-                } 
+                    font-size: 2.2rem;
+                    padding: 120px 0 30px 0;
+                }
             }
-            
-
-            #messageForm{
-                
-
-                @media (min-width: 567px) {
-                width: auto;
-                }
-
-                .form-label{
-                display: none;
-                }
-            
-                .form-input{
-                    font-size: 1rem;
-                    display: block;
-                    width: 100%;
-                    padding: 5px 20px;
-                    border: 0px;
-                    border-radius: 25px;
-                    font-weight: 200;
-                }
-
-                textarea{
-                    resize: none;
-                    height: 200px;
-
-                    @media (min-width: 768px) {
-                    height: 300px;
-                    }
-
-                }
-
-                button{
-                    width: 100%;
-                }
-
-            }
-        }
-    }
-
-    .map{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 60px;
-        img{
-        width: 100vw;
-    
-        @media (min-width: 992px){
-            margin-top: 120px;
-        }
-        }
-    }
-
         
-}
+    
+    
+            .articles{
+                grid-area: articles;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+
+                @media (min-width: 576px) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                
+    
+                .article{
+                    padding-bottom: 100px;
+                    
+                    
+    
+                    .article-img{
+                        position: relative;
+                        z-index: 0;
+                        display: flex;
+                        justify-content: center;
+    
+                        img{
+                            width: auto;
+                            height: auto;
+                        }
+    
+                        .date{
+                            background-color: $accent-color;
+                            padding: 10px;
+                            position: absolute;
+                            top: 10%;
+                            left: 3%;
+                            z-index: 1;
+                            margin: 10px;
+    
+                            h3{
+                                line-height: 1;
+                            }
+                            
+                            p{
+                                line-height: 1;
+                                margin-bottom: 0;
+                            }
+    
+                        }
+    
+                    }
+    
+                    .article-txt{
+                       width: 420px;
+                    }
+                }
+            } 
+           
+        }
+
+        .pagenr{
+            padding-bottom: 50px;
+        }
+        
+    }
+
+    .pagenr{
+        grid-area: pagenr;
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .newsletter{
+        background-color:$bg-color;
+        position: relative;
+        padding: 80px 0;
+        z-index: 0;
+        
+    
+        .squiggly{
+            width: auto;
+            height: 20%;
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+            z-index: -1;
+        }
+    
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            
+            @media (min-width: 768px) {
+                flex-direction: row;
+                
+            }
+            
+    
+           h2{
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            }
+    
+            form{
+                margin-top: 20px;
+                input{
+                    color: $txt-color;
+                    text-decoration: none;
+                    padding: 10px 30px;
+                    font-size: 1rem;
+                    border-radius: 25px;
+                    outline: none;
+                    border: 1px solid #DAD9D3;
+                }
+    
+                button{
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+    
+            } 
+        }
+    }
+
 
 
 

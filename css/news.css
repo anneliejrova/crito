@@ -184,15 +184,15 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 12px;
 }
 
-main .contact-title {
+.news-title {
   background-color: #F0EFE9;
   position: relative;
   z-index: 0;
 }
-main .contact-title .lines {
+.news-title .lines {
   width: 100vw;
 }
-main .contact-title .lines .bg-lines {
+.news-title .lines .bg-lines {
   width: 50%;
   height: auto;
   position: absolute;
@@ -201,185 +201,146 @@ main .contact-title .lines .bg-lines {
   z-index: -1;
 }
 @media (min-width: 1200px) {
-  main .contact-title .lines .bg-lines {
+  .news-title .lines .bg-lines {
     width: 30%;
   }
 }
-main .contact-title .title {
+.news-title .title {
   padding-top: 70px;
   padding-bottom: 70px;
 }
-main .contact-title .title p a {
+.news-title .title p a {
   padding: 0 10px;
 }
-main .contact-title .title p a:hover {
+.news-title .title p a:hover {
   padding: 0 9px;
   font-weight: 700;
 }
-main .contact-us .container {
-  padding: 0px;
-}
-@media (min-width: 576px) {
-  main .contact-us .container {
-    padding: 100px 50px;
+
+@media (min-width: 1200px) {
+  .news {
+    padding-bottom: 30px;
   }
 }
-@media (min-width: 992px) {
-  main .contact-us .container {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 1400px) {
+  .news {
+    padding-bottom: 60px;
   }
 }
-main .contact-us .container .card {
-  border-radius: 0px;
+.news .container {
+  display: grid;
+  grid-template-areas: "headline" "articles";
+}
+.news .container .title {
+  grid-area: headline;
+}
+.news .container .title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  padding: 120px 0 30px 0;
+}
+.news .container .articles {
+  grid-area: articles;
   display: flex;
-  flex-direction: row;
-  padding: 5px 10px;
-  gap: 1rem;
-  border: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
 }
 @media (min-width: 576px) {
-  main .contact-us .container .card {
-    border: 1px solid #DAD9D3;
-  }
-}
-@media (min-width: 992px) {
-  main .contact-us .container .card {
-    align-items: flex-start;
-  }
-}
-main .contact-us .container .card .span {
-  display: block;
-}
-@media (min-width: 992px) {
-  main .contact-us .container .card {
-    flex-direction: column;
-    padding: 25px 50px;
-    width: 28%;
-  }
-}
-@media (min-width: 1200px) {
-  main .contact-us .container .card {
+  .news .container .articles {
     flex-direction: row;
-    padding: 3rem;
+    flex-wrap: wrap;
   }
 }
-main .contact-us .container .card .icon .round-black {
-  padding: 0.5rem 1.2rem;
-  font-size: 1.3rem;
+.news .container .articles .article {
+  padding-bottom: 100px;
 }
-@media (min-width: 576px) {
-  main .contact-us .container .card .icon .round-black {
-    font-size: 1.3rem;
-    padding: 0.5rem 1.2rem;
-    color: #eeeeee;
-    background-color: #191919;
-    border-radius: 50%;
-    height: auto;
-  }
-}
-main .contact-us .container .card .card-txt a {
-  display: block;
-  font-size: 0.9rem;
-}
-main .contact-us .container .card .card-txt h3 {
-  font-size: 1.2rem;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-}
-@media (min-width: 576px) {
-  main .contact-us .container .card .card-txt h3 {
-    font-size: 1.6rem;
-  }
-}
-main .contact-us .container .card .card-txt p a:hover {
-  color: #7c7c7c;
-}
-@media (min-width: 576px) {
-  main .contact-us .container .card .card-txt p a {
-    font-size: 0.8rem;
-  }
-}
-@media (min-width: 1200px) {
-  main .contact-us .container .card .card-txt {
-    padding-top: 0px;
-  }
-}
-main .message-form .container {
-  margin-bottom: 100px;
-  background-color: #F0EFE9;
-  width: 98%;
-  padding: 50px 5px 50px 5px;
-}
-@media (min-width: 576px) {
-  main .message-form .container {
-    padding: 110px 100px;
-  }
-}
-@media (min-width: 992px) {
-  main .message-form .container {
-    padding: 150px 150px 75px 150px;
-  }
-}
-main .message-form .container .center-content h3 {
-  width: 100%;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 2.5rem;
-  padding-bottom: 75px;
-}
-@media (min-width: 768px) {
-  main .message-form .container .center-content h3 {
-    width: 80%;
-  }
-}
-@media (min-width: 992px) {
-  main .message-form .container .center-content h3 {
-    width: 50%;
-  }
-}
-@media (min-width: 567px) {
-  main .message-form .container #messageForm {
-    width: auto;
-  }
-}
-main .message-form .container #messageForm .form-label {
-  display: none;
-}
-main .message-form .container #messageForm .form-input {
-  font-size: 1rem;
-  display: block;
-  width: 100%;
-  padding: 5px 20px;
-  border: 0px;
-  border-radius: 25px;
-  font-weight: 200;
-}
-main .message-form .container #messageForm textarea {
-  resize: none;
-  height: 200px;
-}
-@media (min-width: 768px) {
-  main .message-form .container #messageForm textarea {
-    height: 300px;
-  }
-}
-main .message-form .container #messageForm button {
-  width: 100%;
-}
-main .map {
+.news .container .articles .article .article-img {
+  position: relative;
+  z-index: 0;
   display: flex;
   justify-content: center;
+}
+.news .container .articles .article .article-img img {
+  width: auto;
+  height: auto;
+}
+.news .container .articles .article .article-img .date {
+  background-color: #F9D783;
+  padding: 10px;
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  z-index: 1;
+  margin: 10px;
+}
+.news .container .articles .article .article-img .date h3 {
+  line-height: 1;
+}
+.news .container .articles .article .article-img .date p {
+  line-height: 1;
+  margin-bottom: 0;
+}
+.news .container .articles .article .article-txt {
+  width: 420px;
+}
+.news .pagenr {
+  padding-bottom: 50px;
+}
+
+.pagenr {
+  grid-area: pagenr;
+  display: block;
+  padding-bottom: 100px;
+}
+
+.newsletter {
+  background-color: #F0EFE9;
+  position: relative;
+  padding: 80px 0;
+  z-index: 0;
+}
+.newsletter .squiggly {
+  width: auto;
+  height: 20%;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  z-index: -1;
+}
+.newsletter .container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
+  flex-direction: column;
 }
-main .map img {
-  width: 100vw;
-}
-@media (min-width: 992px) {
-  main .map img {
-    margin-top: 120px;
+@media (min-width: 768px) {
+  .newsletter .container {
+    flex-direction: row;
   }
+}
+.newsletter .container h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.newsletter .container form {
+  margin-top: 20px;
+}
+.newsletter .container form input {
+  color: #191919;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid #DAD9D3;
+}
+.newsletter .container form button {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 footer {
