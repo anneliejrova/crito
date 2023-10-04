@@ -47,7 +47,7 @@ a {
 .btn-black {
   background-color: #191919;
   border: 1px solid #191919;
-  color: #fafafa;
+  color: #ffffff;
   text-decoration: none;
   padding: 10px 30px;
   font-weight: 600;
@@ -64,7 +64,7 @@ a {
   font-size: 0.9em;
 }
 .btn-black:hover {
-  background-color: #fafafa;
+  background-color: #ffffff;
   color: #191919;
   border-color: #191919;
 }
@@ -255,7 +255,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   transform: translate(calc(50% - 15px));
 }
 header .container .menu .main-menu .btn-login {
-  padding: 8px 25px;
+  padding: 10px 25px;
 }
 
 .showcase {
@@ -743,7 +743,7 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .services .container .cards .service-card {
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 30px 30px 0px 30px;
   width: 300px;
   height: auto;
@@ -822,13 +822,13 @@ header .container .menu .main-menu .btn-login {
   .why-us .grey {
     width: 60%;
     height: 40%;
-    bottom: 0;
+    bottom: 10px;
   }
 }
 @media (min-width: 1400px) {
   .why-us .grey {
     height: 50%;
-    bottom: 100px;
+    bottom: 20px;
   }
 }
 .why-us .container {
@@ -868,11 +868,15 @@ header .container .menu .main-menu .btn-login {
 }
 .why-us .container .why-txt .section-title {
   padding-top: 20px;
+  padding-bottom: 2px;
 }
 @media (min-width: 576px) {
   .why-us .container .why-txt .section-title {
     padding-top: 0px;
   }
+}
+.why-us .container .why-txt .reasons .reason {
+  padding-top: 2px;
 }
 @media (min-width: 1200px) {
   .why-us .container .why-img {
@@ -1027,7 +1031,7 @@ header .container .menu .main-menu .btn-login {
 .team-and-testimonial .container .testimonial {
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
+  background-color: #ffffff;
   margin: 60px 10px;
   padding: 10px;
 }
@@ -1213,12 +1217,21 @@ header .container .menu .main-menu .btn-login {
 
 footer {
   background-color: #0E1021;
-  color: #fafafa;
+  color: #ffffff;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
 }
 footer .footer-menu {
-  padding: 100px 0 50px 0;
+  padding: 60px 0;
   position: relative;
   z-index: 0;
+}
+@media (min-width: 576px) {
+  footer .footer-menu {
+    padding: 100px 0 50px 0;
+  }
 }
 footer .footer-menu .lines {
   width: 100vw;
@@ -1238,7 +1251,12 @@ footer .footer-menu .lines .bg-lines3 {
 }
 footer .footer-menu .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  footer .footer-menu .container {
+    flex-direction: row;
+  }
 }
 @media (min-width: 768px) {
   footer .footer-menu .container {
@@ -1253,8 +1271,8 @@ footer .footer-menu .container {
 }
 footer .footer-menu .container .logo-info {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   footer .footer-menu .container .logo-info {
@@ -1279,21 +1297,28 @@ footer .footer-menu .container .logo-info img {
   width: auto;
 }
 footer .footer-menu .container .logo-info p {
-  font-size: 0.9rem;
+  display: none;
   padding-top: 5%;
-  padding-right: 20px;
 }
-@media (max-width: 576px) {
-  footer .footer-menu .container .logo-info p span {
-    display: none;
+@media (min-width: 576px) {
+  footer .footer-menu .container .logo-info p {
+    display: block;
   }
 }
 footer .footer-menu .container .menu {
-  padding-top: 20px;
+  padding-top: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (min-width: 576px) {
+  footer .footer-menu .container .menu {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 @media (min-width: 768px) {
   footer .footer-menu .container .menu {
@@ -1302,17 +1327,17 @@ footer .footer-menu .container .menu {
 }
 footer .footer-menu .container .menu a {
   display: block;
-  color: #fafafa;
+  color: #ffffff;
 }
 footer .footer-menu .container .menu a:hover {
   color: #7c7c7c;
 }
 footer .footer-menu .container .menu .menu-item .title h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   footer .footer-menu .container .menu .menu-item .title h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 footer .footer-menu .container .menu .menu-item .specified-menu {
@@ -1345,17 +1370,17 @@ footer .footer-bottom .container {
   }
 }
 footer .footer-bottom .container .copy span {
-  display: none;
+  display: block;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   footer .footer-bottom .container .copy span {
-    display: inline;
+    display: inline-block;
   }
 }
 footer .footer-bottom .container i {
   padding: 0.6rem;
   font-size: 1rem;
-  color: #fafafa;
+  color: #ffffff;
 }
 footer .footer-bottom .container i:hover {
   color: #7c7c7c;

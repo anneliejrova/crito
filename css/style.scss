@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,900&display=swap');
 
 $bg-color: #F0EFE9; //grey
-$light-color: #fafafa;//white
+$light-color: #ffffff;//white
 $accent-color:#F9D783; //yellow
 $txt-color: #191919; //dark grey
 $txt-accent: #F94D1C; //red
@@ -16,10 +16,13 @@ html, body{
     font-size: 20px;
     font-weight: 400;
     line-height: 2.0;
+   
+    
 
     @media (min-width: 576px) {
         font-size: 16px;
         font-weight: 400; 
+        
     }
 }
 
@@ -292,7 +295,7 @@ header{
                 }
 
                 .btn-login{
-                    padding: 8px 25px;
+                    padding: 10px 25px;
                 }
             }
         }
@@ -909,13 +912,13 @@ header{
         @media (min-width: 1200px) {
             width: 60%;
             height: 40%;
-            bottom: 0;
+            bottom: 10px;
         }
        
 
         @media (min-width: 1400px) {          
             height: 50%;
-            bottom:100px;
+            bottom: 20px;
         }
     }
 
@@ -946,25 +949,25 @@ header{
 
         .why-txt{
             padding-bottom: 50px;
+            
 
-        @media (min-width: 992px){
+             @media (min-width: 992px){
             padding-bottom: 0px;
-        }
-
+            }
 
             .section-title{
                 padding-top: 20px;
+                padding-bottom: 2px;
                 @media (min-width:576px) {
                     padding-top: 0px;
                 }
             }
-
             .reasons{
-
                 .reason{
-
+                    padding-top: 2px;
                 }
             }
+
         }
 
         .why-img{
@@ -1367,10 +1370,21 @@ footer{
     background-color: $footer-bg;
     color: $light-color;
 
+    a{
+        text-decoration: none;
+        color: $light-color;
+    }
+
+
     .footer-menu{
-        padding: 100px 0 50px 0;
+        padding: 60px 0;
         position: relative;
         z-index: 0;
+
+        @media (min-width: 576px) {
+            padding: 100px 0 50px 0;
+        }
+
     
         .lines{
         width: 100vw;
@@ -1392,7 +1406,13 @@ footer{
 
         .container{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            
+
+            @media (min-width: 576px){
+                flex-direction: row;
+                }
+
 
             @media (min-width: 768px){
             flex-direction: column;
@@ -1405,16 +1425,18 @@ footer{
 
             .logo-info{
                 display:flex;
-                flex-direction: column;
                 align-items: flex-start;
+                flex-direction: column;
             
+                
+
                 @media (min-width: 768px){
-                    display:flex;
-                    flex-direction: row;
+                display:flex;
+                flex-direction: row;
                 }
 
                 @media (min-width: 992px){
-                    align-items: center;
+                align-items: center;
                 }
  
 
@@ -1431,49 +1453,60 @@ footer{
                 }
 
                 p{
-                    font-size: 0.9rem;
+                    display: none;
                     padding-top: 5%;
-                    padding-right: 20px;
-                    
-                    span{
 
-                        @media (max-width: 576px) {
-                            display: none;
-                        }
-                    } 
+                    @media (min-width: 576px){
+                    display: block;
+                    }
+  
                 }
+
             }
 
+            
+        
+
             .menu{
-                padding-top: 20px;
+                padding-top: 30px;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+
+
+                @media (min-width: 576px){
                 flex-direction: column;
+                flex-wrap: nowrap;
+                }
+
 
                 @media (min-width:768px) {
                   flex-direction: row;
                 }
 
+
+
                 a{
                     display: block;
                     color: $light-color;
-
                     &:hover{
                         color: $hover-border;
                     }
+
                 }
 
                 .menu-item{
 
                     .title{
-
                         h3{
-                           font-size: 1rem; 
-
-                           @media (min-width:768px) {
-                                font-size: 1.6rem;
+                            font-size: 0.9rem;
+                            @media (min-width: 576px) {
+                                font-size: 1.3rem;
                             }
+
                         }
                     }
 
@@ -1489,11 +1522,12 @@ footer{
                         background-color: #0e1021ad;
                         border-radius: 50%;
                     }
-                }
+            }
             }
         }
-    }
-
+    
+    } 
+    
     .footer-bottom{
         grid-area: bottom;
         border-top: 1px solid $hover-border;
@@ -1512,9 +1546,10 @@ footer{
 
             .copy{
                 span{
-                    display: none;
-                    @media (min-width: 576px) {
-                        display: inline;
+                    display: block;
+
+                    @media (min-width:768px) {
+                        display: inline-block;
                     }
                 }
             }
@@ -1525,14 +1560,15 @@ footer{
             color:$light-color;
 
                 &:hover{
-                    color: $hover-border;
-                }
+                color: $hover-border;
+                 }
 
-                @media (min-width:768px) {
-                    padding: 1rem;
-                    font-size: 1.3rem;
-                }   
+                 @media (min-width:768px) {
+                padding: 1rem;
+                font-size: 1.3rem;
+            }   
             }
         }
     }
+
 }
