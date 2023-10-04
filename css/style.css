@@ -534,6 +534,20 @@ header .container .menu .main-menu .btn-login {
     padding: 0 70px;
   }
 }
+.about .container .about-img .squiggly-white {
+  width: auto;
+  height: 15%;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: 2;
+}
+@media (min-width: 1400px) {
+  .about .container .about-img .squiggly-white {
+    left: 10%;
+    height: 20%;
+  }
+}
 .about .container .about-img .sam-photo {
   z-index: 1;
   right: 0px;

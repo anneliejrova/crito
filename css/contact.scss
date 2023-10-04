@@ -457,38 +457,20 @@ main{
     }
 
     .map{
-        width: 100vw;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
         img{
-        border: 1px solid #ffffff;
-        &:hover{
-            border: 1px solid $txt-color;
-        }
-       
-        }   
-
-        .zoom-in{
-            display: block;
-            width: 100%;
-            height: auto;
-            @media (min-width:922px) {
-                display: none;  
-            }
-        }
+        width: 100vw;
     
-        .zoom-out{
-            display: none;
-            width: 100%;
-            height: auto;
-
-            @media (min-width:922px) {
-                display: block;  
-            }
+        @media (min-width: 992px){
+            margin-top: 120px;
         }
-
+        }
+    }
 
         
-    }
 }
 
 
@@ -648,13 +630,7 @@ footer{
             }
         }
     
-    }
-
-    .main{
-        
-    }
-
-   
+    } 
     
     .footer-bottom{
         grid-area: bottom;
