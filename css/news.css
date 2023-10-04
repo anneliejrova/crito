@@ -342,11 +342,11 @@ header .container .menu .main-menu .btn-login {
 
 footer {
   background-color: #0E1021;
-  color: #eeeeee;
+  color: #fafafa;
 }
 footer a {
   text-decoration: none;
-  color: #eeeeee;
+  color: #fafafa;
 }
 footer .footer-menu {
   padding: 60px 0;
@@ -452,7 +452,7 @@ footer .footer-menu .container .menu {
 }
 footer .footer-menu .container .menu a {
   display: block;
-  color: #eeeeee;
+  color: #fafafa;
 }
 footer .footer-menu .container .menu a:hover {
   color: #7c7c7c;
@@ -505,7 +505,7 @@ footer .footer-bottom .container .copy span {
 footer .footer-bottom .container i {
   padding: 0.6rem;
   font-size: 1rem;
-  color: #eeeeee;
+  color: #fafafa;
 }
 footer .footer-bottom .container i:hover {
   color: #7c7c7c;
