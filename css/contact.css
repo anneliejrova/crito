@@ -95,7 +95,7 @@ header .container .menu .top-menu {
   display: flex;
   justify-content: end;
   border-bottom: 1px solid #DAD9D3;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   align-items: center;
 }
 @media (min-width: 1200px) {
@@ -104,12 +104,17 @@ header .container .menu .top-menu {
   }
 }
 header .container .menu .top-menu .contact-info {
-  display: none;
+  width: 80%;
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
+}
+header .container .menu .top-menu .contact-info span {
+  display: none;
 }
 @media (min-width: 1200px) {
-  header .container .menu .top-menu .contact-info {
-    display: flex;
+  header .container .menu .top-menu .contact-info span {
+    display: inline-block;
   }
 }
 header .container .menu .top-menu .contact-info .content-box {

@@ -110,7 +110,7 @@ header{
                 display: flex;
                 justify-content: end;
                 border-bottom: 1px solid #DAD9D3;
-                padding-bottom: 10px;
+                padding-bottom: 0px;
                 align-items: center;
 
                 @media (min-width: 1200px) {
@@ -118,11 +118,22 @@ header{
                 }
                 
                 .contact-info{
-                    display: none;
+                    width: 80%;
+                    display: flex;
                     align-items: center;
+                    justify-content: flex-start;
 
-                    @media (min-width: 1200px) {
-                        display: flex;
+                    @media (min-width: 1200px){
+                        
+                    }
+
+                    span{
+                        
+                        display:none;
+                        
+                        @media (min-width: 1200px){
+                            display: inline-block;
+                        }
                     }
                     
 
