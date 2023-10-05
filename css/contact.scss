@@ -6,7 +6,7 @@ $light-color: #ffffff;//white
 $accent-color:#F9D783; //yellow
 $txt-color: #191919; //dark grey
 $txt-accent: #F94D1C; //red
-$hover-border: #7c7c7c; //light grey
+$details: #7c7c7c; //light grey
 $footer-bg: #0E1021; //darkblue
 
 html, body{
@@ -31,6 +31,8 @@ html, body{
     font-weight: 600;
     border-radius: 25px;
     font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
 
     @media (min-width:576px) {
         font-size: 1rem;
@@ -176,7 +178,7 @@ header{
 
                     
                         &:hover{
-                            color: $hover-border;
+                            color: $details;
                         }
                     }                    
                 }           
@@ -358,7 +360,7 @@ main{
                         a{  
                         
                             &:hover{
-                                color: $hover-border;
+                                color: $details;
                             }
                             
                             @media (min-width: 576px){
@@ -590,7 +592,7 @@ footer{
                     color: $light-color;
 
                     &:hover{
-                        color: $hover-border;
+                        color: $details;
                     }
 
                 }
@@ -626,7 +628,7 @@ footer{
     
     .footer-bottom{
         grid-area: bottom;
-        border-top: 1px solid $hover-border;
+        border-top: 1px solid $details;
 
         .container{
             font-size: 0.6rem;
@@ -656,7 +658,7 @@ footer{
             color:$light-color;
 
                 &:hover{
-                color: $hover-border;
+                color: $details;
                  }
 
                  @media (min-width:768px) {

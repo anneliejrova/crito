@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,900&display=swap');
 
 $bg-color: #F0EFE9; //grey
+$bg-color-accent:#BEEBFF; //lightblue
 $light-color: #ffffff;//white
 $accent-color:#F9D783; //yellow
 $txt-color: #191919; //dark grey
 $txt-accent: #F94D1C; //red
-$hover-border: #7c7c7c; //light grey
+$details: #7c7c7c; //light grey 
 $footer-bg: #0E1021; //dark blue
 
 html, body{
@@ -40,6 +41,8 @@ a{
     font-weight: 600;
     border-radius: 25px;
     font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
 
     @media (min-width:576px) {
         font-size: 1rem;
@@ -66,6 +69,8 @@ a{
     font-weight: 600;
     border-radius: 25px;
     font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
 
     @media (min-width:576px) {
         font-size: 1rem;
@@ -92,6 +97,8 @@ a{
     font-weight: 600;
     border-radius: 25px;
     font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
 
     @media (min-width:576px) {
         font-size: 1rem;
@@ -226,6 +233,7 @@ header{
                         border-right: 1px solid #DAD9D3;
                         font-size: 0.9rem;
                         font-weight: 300;
+                        
 
                         a{
                             padding-right: 30px;
@@ -255,7 +263,7 @@ header{
 
                     
                         &:hover{
-                            color: $hover-border;
+                            color: $details;
                         }
                     }  
                 }
@@ -508,11 +516,14 @@ header{
         }
 
         .topic{
+            color: $details;
+            transition: color 0.2s ease-in-out;
              @media (min-width: 1200px){
             width: 250px;
             }
-            &:hover h3{
-                color: $hover-border;
+            &:hover{
+                color: #000;
+                cursor: pointer;
             }
         }
 
@@ -627,7 +638,7 @@ header{
                 padding: 5px;
                 width: 50%;
                 height: auto;
-                background-color: #BEEBFF;
+                background-color: $bg-color-accent;
                 position: absolute;
                 z-index: 2;
                 left: 0px;
@@ -751,7 +762,9 @@ header{
                         background-color: transparent;
                         color: $txt-color;
                         border: 1px solid $txt-color;
-                        border-radius: 25px;  
+                        border-radius: 25px;
+                        transition: background-color 0.1s ease-in-out,
+                        color 0.1s ease-in-out;  
                     }
 
                     i{
@@ -829,6 +842,7 @@ header{
                 height: auto;
                 display: flex;
                 flex-direction: column;
+                transition: background-color 0.25s ease-in-out;
                 
                 
 
@@ -855,6 +869,9 @@ header{
                     border-radius: 25px;
                     align-self: self-end;
                     margin-bottom: 20px;
+                    transition: background-color 0.1s ease-in-out,
+                                color 0.1s ease-in-out;
+                    
 
                     i{
                       font-size: 1.1rem; 
@@ -1493,7 +1510,7 @@ footer{
                     display: block;
                     color: $light-color;
                     &:hover{
-                        color: $hover-border;
+                        color: $details;
                     }
 
                 }
@@ -1530,7 +1547,7 @@ footer{
     
     .footer-bottom{
         grid-area: bottom;
-        border-top: 1px solid $hover-border;
+        border-top: 1px solid $details;
 
         .container{
             font-size: 0.6rem;
@@ -1560,7 +1577,7 @@ footer{
             color:$light-color;
 
                 &:hover{
-                color: $hover-border;
+                color: $details;
                  }
 
                  @media (min-width:768px) {

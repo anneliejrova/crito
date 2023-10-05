@@ -28,6 +28,7 @@ a {
   font-weight: 600;
   border-radius: 25px;
   font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 @media (min-width: 576px) {
   .btn-yellow {
@@ -53,6 +54,7 @@ a {
   font-weight: 600;
   border-radius: 25px;
   font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 @media (min-width: 576px) {
   .btn-black {
@@ -78,6 +80,7 @@ a {
   font-weight: 600;
   border-radius: 25px;
   font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 @media (min-width: 576px) {
   .btn-transparent {
@@ -450,13 +453,18 @@ header .container .menu .main-menu .btn-login {
     align-self: flex-start;
   }
 }
+.features .container .topic {
+  color: #7c7c7c;
+  transition: color 0.2s ease-in-out;
+}
 @media (min-width: 1200px) {
   .features .container .topic {
     width: 250px;
   }
 }
-.features .container .topic:hover h3 {
-  color: #7c7c7c;
+.features .container .topic:hover {
+  color: #000;
+  cursor: pointer;
 }
 .features .container .business {
   grid-area: business;
@@ -687,6 +695,7 @@ header .container .menu .main-menu .btn-login {
   color: #191919;
   border: 1px solid #191919;
   border-radius: 25px;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 .about .container .about-txt .about-btns .vid i {
   font-size: 1.1rem;
@@ -749,6 +758,7 @@ header .container .menu .main-menu .btn-login {
   height: auto;
   display: flex;
   flex-direction: column;
+  transition: background-color 0.25s ease-in-out;
 }
 .services .container .cards .service-card:hover {
   background-color: #F9D783;
@@ -769,6 +779,7 @@ header .container .menu .main-menu .btn-login {
   border-radius: 25px;
   align-self: self-end;
   margin-bottom: 20px;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 .services .container .cards .service-card .btn-round i {
   font-size: 1.1rem;
