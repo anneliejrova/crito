@@ -95,21 +95,32 @@ header{
         }
 
         .menu-bars-btn{
-            font-size: 2rem;
-            border: none;
-            background-color: transparent;
-
             @media (min-width: 992px){
                 display: none;
             }
 
+            .btn{
+            color: $txt-color;
+            font-size: 2rem;
+            border: none;
+            background-color: transparent;
+            }
+
+            ul{ 
+                background-color: $accent-color;
+                .icons{
+                    padding: 20px;
+                    gap: 22px;
+                    display: flex;
+                    font-size: 1.2rem;
+                }
+            }
         }
 
         .menu{
             display:none;
             flex: 1;
             
-
             @media (min-width: 992px){
                 display: block;
             }
@@ -131,10 +142,6 @@ header{
                     align-items: center;
                     justify-content: flex-start;
 
-                    @media (min-width: 1200px){
-                        
-                    }
-
                     span{
                         
                         display:none;
@@ -144,7 +151,6 @@ header{
                         }
                     }
                     
-
                     .content-box{
                         margin-right: 30px;
                         
@@ -215,9 +221,6 @@ header{
                             left: 50%;
                             bottom: -3px;
                             transform: translate((calc(50% - 15px)));
-                        
-                    
-
                         }
                     }
                 }
@@ -257,7 +260,6 @@ header{
             padding-bottom: 70px;
             
             p{
-    
                 a{
                     padding: 0 10px;
                     &:hover{
