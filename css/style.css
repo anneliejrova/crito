@@ -464,7 +464,7 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .features .container .topic {
-  color: #7c7c7c;
+  color: #191919;
   transition: color 0.2s ease-in-out;
 }
 @media (min-width: 1200px) {
@@ -473,7 +473,7 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .features .container .topic:hover {
-  color: #000;
+  color: #7c7c7c;
   cursor: pointer;
 }
 .features .container .business {

@@ -531,13 +531,13 @@ header{
         }
 
         .topic{
-            color: $details;
+            color: $txt-color;
             transition: color 0.2s ease-in-out;
              @media (min-width: 1200px){
             width: 250px;
             }
             &:hover{
-                color: #000;
+                color: $details;
                 cursor: pointer;
             }
         }
