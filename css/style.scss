@@ -1251,70 +1251,88 @@ header{
 }
 
 .news{
-    
-    @media (min-width:1200px) {
-        padding-bottom: 30px;
-    }
 
-    @media (min-width:1400px) {
-        padding-bottom: 60px;
-    }
     .container{
-        
         display: grid;
-        grid-template-areas:    "headline" 
+        grid-template-areas:    "title"
                                 "articles"
                                 "button";
 
-
-        @media (min-width:992px) {
-            grid-template-areas: "headline button"
-                                "articles articles";
+        @media (min-width: 992px) {
+            grid-template-areas:    "title title button"
+                                    " articles articles articles";
+            
         }
+
+    
         
-
         .section-title{
-            grid-area: headline;
+            grid-area: title;
+            padding: 80px 0 60px 0;
+            
+            
+             @media (min-width:992px) {
+                padding: 100px 0 90px 0;
+             }
 
-            }
+             @media (min-width:1200px) {
+             padding: 120px 0 90px 0;
+             }
+        }
 
         .news-btn{
-            margin-top: 10px;
-            grid-area: button;
-            padding-bottom: 100px;
+            grid-area: button; 
+            padding: 60px 0 80px 0;
 
             @media (min-width:992px) {
-            margin-top: 100px;
-            padding-bottom: 0;
-            }
+                padding: 0;
+             }
+    
         }
+    
 
 
         .articles{
             grid-area: articles;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px;
 
-            @media (min-width: 992px) {
-            justify-content: space-between;
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr; 
+                gap: 20px;
             }
 
-            .article{
+            @media (min-width:992px) {
                 padding-bottom: 100px;
-
+            }
+    
+            @media (min-width: 1200px) {
+                grid-template-columns: 1fr 1fr 1fr; 
+                gap: 20px;
+            }
+            
+    
+            .article{
+                &:hover .article-txt{
+                    color: $details;
+                } 
+    
                 .article-img{
                     position: relative;
                     z-index: 0;
-                    display: flex;
-                    justify-content: center;
-
-                    img{
-                        width: auto;
-                        height: auto;
+                        
+                    .image-container {
+                         width: 100%;
+                        height: 100%;
                     }
-
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+    
                     .date{
                         background-color: $accent-color;
                         padding: 10px;
@@ -1327,18 +1345,12 @@ header{
                         h3{
                             line-height: 1;
                         }
-                        
                         p{
                             line-height: 1;
                             margin-bottom: 0;
                         }
-
+    
                     }
-
-                }
-
-                .article-txt{
-                   width: 420px;
                 }
             }
         }

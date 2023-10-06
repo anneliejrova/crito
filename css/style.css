@@ -1115,62 +1115,77 @@ header .container .menu .main-menu .btn-login {
   margin-bottom: 50px;
 }
 
-@media (min-width: 1200px) {
-  .news {
-    padding-bottom: 30px;
-  }
-}
-@media (min-width: 1400px) {
-  .news {
-    padding-bottom: 60px;
-  }
-}
 .news .container {
   display: grid;
-  grid-template-areas: "headline" "articles" "button";
+  grid-template-areas: "title" "articles" "button";
 }
 @media (min-width: 992px) {
   .news .container {
-    grid-template-areas: "headline button" "articles articles";
+    grid-template-areas: "title title button" " articles articles articles";
   }
 }
 .news .container .section-title {
-  grid-area: headline;
+  grid-area: title;
+  padding: 80px 0 60px 0;
+}
+@media (min-width: 992px) {
+  .news .container .section-title {
+    padding: 100px 0 90px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .news .container .section-title {
+    padding: 120px 0 90px 0;
+  }
 }
 .news .container .news-btn {
-  margin-top: 10px;
   grid-area: button;
-  padding-bottom: 100px;
+  padding: 60px 0 80px 0;
 }
 @media (min-width: 992px) {
   .news .container .news-btn {
-    margin-top: 100px;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 .news .container .articles {
   grid-area: articles;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .news .container .articles {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 @media (min-width: 992px) {
   .news .container .articles {
-    justify-content: space-between;
+    padding-bottom: 100px;
   }
 }
-.news .container .articles .article {
-  padding-bottom: 100px;
+@media (min-width: 1200px) {
+  .news .container .articles {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+.news .container .articles .article:hover .article-txt {
+  color: #7c7c7c;
 }
 .news .container .articles .article .article-img {
   position: relative;
   z-index: 0;
-  display: flex;
-  justify-content: center;
+}
+.news .container .articles .article .article-img .image-container {
+  width: 100%;
+  height: 100%;
 }
 .news .container .articles .article .article-img img {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .news .container .articles .article .article-img .date {
   background-color: #F9D783;
@@ -1187,9 +1202,6 @@ header .container .menu .main-menu .btn-login {
 .news .container .articles .article .article-img .date p {
   line-height: 1;
   margin-bottom: 0;
-}
-.news .container .articles .article .article-txt {
-  width: 420px;
 }
 
 .newsletter {
